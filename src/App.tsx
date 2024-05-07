@@ -12,7 +12,7 @@ import Announcement from "./Announcement/Announcement";
 import Exam from "./Exam/Exam";
 import store from "./Redux/store";
 import { Provider } from "react-redux";
-import Languages from "./LocalizaionTest/Languages";
+
 
 const router = createBrowserRouter([
   {
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
           { path: "/courses", element: <Courses />, errorElement: <NotFound />, },
           { path: "/announcements", element: <Announcement />, errorElement: <NotFound />, },
           { path: "/exam/:id", element: <Exam />, errorElement: <NotFound />, },
-          { path: "/translate", element: <Languages />, errorElement: <NotFound />, },
+         
         ],
       },
       { path: "*", element: <NotFound /> },
